@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
     <div id="intro">SELECT EITHER ROCK, PAPER OR SCISSORS</div>
     <div id="buttons">
-        <button id="rck">ROCK</button>
+        <button data-val="Rest" id="rck">ROCK</button>
         <button id="pap">PAPER</button>
         <button id="sci">SCISSORS</button>
     </div>
+    <div id="scores"></div>
+    <div>RESULTS: <span id="results"></span></div>
 </body>
 </html>
