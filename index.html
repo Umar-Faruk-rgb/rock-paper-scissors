@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
-    <div id="intro">SELECT EITHER ROCK, PAPER OR SCISSORS</div>
-    <div id="buttons">
-        <button data-val="Rest" id="rck">ROCK</button>
-        <button id="pap">PAPER</button>
-        <button id="sci">SCISSORS</button>
+<div id="header">Rock Paper Scissors Game</div>
+<div id="main">
+    <div id="interface">
+        <h2 id="remarks" class="remarks">Good Luck!</h2>
+        <div id="scoreboard">
+            <p id="player-moji"></p>
+            <div id="sb-player" class="score-box">
+                <div class="player">YOU</div>
+                <div class="score"><p id="pScore">0</p></div>
+            </div>
+            <h1 id="vs">VS</h1>
+            <div class="score-box">
+                <div class="player">COMPUTER</div>
+                <div class="score"><p id="cScore">0</p></div>
+            </div>
+            <p id="compu-moji"></p>
+        </div>
+        <h2 class="remarks">Make your Choice</h2>
+        <div id="selection">
+            <div class="choices">
+                <button id="rck"><img id="rock" src="rock.png"></button>
+                <p class="caption">ROCK</p>
+            </div>
+            <div class="choices">
+                <button id="pap"><img id="paper" src="paper.png"></button>
+                <p class="caption">PAPER</p>
+            </div>
+            <div class="choices">
+                <button id="sci"><img id="scissors" src="scissors.png"></button>
+                <p class="caption">SCISSORS</p>
+            </div>
+        </div>
     </div>
-    <div id="scores"></div>
-    <div>RESULTS: <span id="results"></span></div>
+</div>
+<!--<div id="footer">All Rights Reserved</div>-->
 </body>
 </html>

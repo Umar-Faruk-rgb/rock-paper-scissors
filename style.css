@@ -1,0 +1,114 @@
+body {
+    background: white;
+    font-family: "Audiowide", sans-serif;
+}
+
+#main {
+    background: #0f4658;
+    margin: 15px 100px 15px 100px;
+    padding: 10px;
+}
+
+#interface {
+    background: white;
+    padding-top: 5px;
+    margin-top: 15px;
+}
+
+.remarks,
+.caption,
+#header,
+#footer {
+    color: #399a92;
+    text-align: center;
+}
+
+#header {
+    color: black;
+    margin-top: 10px;
+    font-size: xx-large;
+}
+
+.remarks {
+    color: red;
+}
+
+#remarks { 
+    font-size: 25px;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    height: 230px;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    background: #0f4658;
+    width: 200px;
+    height: 210px;
+}
+
+.player {
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #399a92;
+    text-align: center;
+    font-size: 100px;
+    flex: 1 0 auto;
+    height: 180px;
+}
+
+#vs {
+    text-decoration: double;
+    padding: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    flex: 0 1 auto;
+}
+
+#player-moji {
+    font-size: 100px;
+    margin-left: 30px;
+}
+#compu-moji {
+    font-size:100px;
+
+}
+
+#selection {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+button {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    height: 100px;
+}
