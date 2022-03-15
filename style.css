@@ -15,7 +15,6 @@ body {
     margin-top: 15px;
 }
 
-.remarks,
 .caption,
 #header,
 #footer {
@@ -29,12 +28,15 @@ body {
     font-size: xx-large;
 }
 
-.remarks {
+.remarks{
     color: red;
+    text-align: center;
 }
 
-#remarks { 
-    font-size: 25px;
+#remarks {
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 35px;
+    font-weight: bolder;
 }
 
 #scoreboard {
@@ -101,14 +103,122 @@ body {
     gap: 40px;
 }
 
-button {
+img {
+    height: 80px;
+    cursor: pointer;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    border: none;
+}
+
+/* This part is for the statistics board*/
+#stats-container {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    border-color: #0f4658;
+    border-style: double;
+    top: 10%;
+    left: 30%;
+    width: 500px;
+    margin-top: 10px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading {
+    margin-top: 2px;
+    font: 50px;
+    text-align: center;
+    font-weight: bold;
+    background: #0f4658;
+    color: white;
+    padding: 5px;
+}
+
+#stats-board {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+#stats-user,
+#stats-computer{
+    width: 200px;
+    text-align: center;
+}
+
+#stats-player h3,
+#stats-computer h3{
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: underline;
+    color: #0f4658;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#stats-player div p,
+#stats-computer div p{
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-weight: bold;
+}
+
+#mid-line {
+    width: 3px;
+    background: #0f4658;
+    margin: 50px;
+}
+
+#tot {
+    text-align: center;
+    color: #0f4658;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#total {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    font-size: 30px;
+    color: red;
+    font-weight: bolder;
+}
+
+#buttons {
+    align-self: center;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    color: white;
+    background-color: #0f4658;
     cursor: pointer;
 }
 
-img {
-    height: 100px;
+#divider {
+    background-color: white;
+    height: 30px;
+    width: 5px;
+    margin: 5px 0px;
+
+}
+
+#replay,
+#quit {
+    width: 120px;
+    text-align: center;
 }

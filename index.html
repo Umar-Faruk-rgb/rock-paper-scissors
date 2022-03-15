@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
@@ -13,7 +16,7 @@
 <div id="header">Rock Paper Scissors Game</div>
 <div id="main">
     <div id="interface">
-        <h2 id="remarks" class="remarks">Good Luck!</h2>
+        <h2 id="remarks" class="remarks">Give it a Try!</h2>
         <div id="scoreboard">
             <p id="player-moji"></p>
             <div id="sb-player" class="score-box">
@@ -30,19 +33,44 @@
         <h2 class="remarks">Make your Choice</h2>
         <div id="selection">
             <div class="choices">
-                <button id="rck"><img id="rock" src="rock.png"></button>
+                <img id="rck" src="rock.png">
                 <p class="caption">ROCK</p>
             </div>
             <div class="choices">
-                <button id="pap"><img id="paper" src="paper.png"></button>
+                <img id="pap" src="paper.png">
                 <p class="caption">PAPER</p>
             </div>
             <div class="choices">
-                <button id="sci"><img id="scissors" src="scissors.png"></button>
+                <img id="sci" src="scissors.png">
                 <p class="caption">SCISSORS</p>
             </div>
         </div>
     </div>
+    <!--This is the part for the statistics board-->
+<div id="stats-container">
+    <h2 id="heading">GAME STATISTICS</h2>
+    <div id="stats-board">
+        <div id="stats-player">
+            <h3>YOU</h3>
+            <div id="here-play"></div>
+        </div>
+        <div id="mid-line"></div>
+        <div id="stats-computer">
+            <h3>COMPUTER</h3>
+            <div id="here-comp"></div>
+        </div>
+    </div>
+    <p id="tot">TOTAL</p>
+    <div id="total">
+        <div id="p"></div>
+        <div id="c"></div>
+    </div>
+    <div id="buttons">
+        <div id="replay">REPLAY</div>
+        <div id="divider"></div>
+        <div id="quit">QUIT</div>
+    </div>
+</div>
 </div>
 <!--<div id="footer">All Rights Reserved</div>-->
 </body>
